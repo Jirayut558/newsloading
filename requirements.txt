@@ -1,6 +1,5 @@
 appnope==0.1.0
 APScheduler==3.5.0
-artagger==0.1.2
 beautifulsoup4==4.6.0
 bleach==1.5.0
 boto==2.48.0
