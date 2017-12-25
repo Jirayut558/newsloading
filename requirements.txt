@@ -52,7 +52,6 @@ prompt-toolkit==1.0.15
 protobuf==3.4.0
 ptyprocess==0.5.2
 Pygments==2.2.0
-PyICU==1.9.7
 pymongo==3.6.0
 pyparsing==2.2.0
 pythainlp==1.5.3
