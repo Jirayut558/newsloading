@@ -204,12 +204,15 @@ def load_matichon():
 
 
 def main():
-    try:
-        load_kaosod()
-        load_matichon()
-        load_dailynews_tofile()
-        print("Loading Script Success")
-    except Exception as e:
-        print(e)
+    for i in range(3):
+        try:
+            if (i==0):
+                load_kaosod()
+            elif(i==1):
+                load_matichon()
+            elif(i==2):
+                load_dailynews_tofile()
+        except:
+            print("--------------------Finish  "+str(i+1)+"/3-----------------------")
 if __name__ == '__main__':
     main()
