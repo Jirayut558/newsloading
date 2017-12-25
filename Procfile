@@ -1,1 +1,1 @@
-web: python loadscript.py
+clock: python clock.py

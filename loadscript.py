@@ -7,6 +7,8 @@ import codecs
 import csv
 from pymongo import MongoClient
 import datetime
+from apscheduler.schedulers.blocking import BlockingScheduler
+
 
 url_dailynews = "https://www.dailynews.co.th/sports?page="
 url_kaosod = "https://www.khaosod.co.th/sports/page/"
@@ -203,10 +205,10 @@ def load_matichon():
 
 def main():
     try:
-        #load_kaosod()
-        #load_matichon()
-        #load_dailynews_tofile()
-        print("Loading Script Testing")
+        load_kaosod()
+        load_matichon()
+        load_dailynews_tofile()
+        print("Loading Script Success")
     except Exception as e:
         print(e)
 if __name__ == '__main__':
